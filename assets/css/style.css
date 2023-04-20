@@ -166,7 +166,7 @@ img {
     .form-area form input {
       width: 75%;
       padding: 10px 20px;
-      border: 3px solid #d2cec8;
+      border: 2px solid #d2cec8;
       border-radius: 7px;
       background-color: #ffffff;
       font-family: 'suisse_intl'; }
@@ -183,29 +183,33 @@ img {
       color: #d2cec8;
       font-style: italic;
       font-size: 14px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: 1px; }
     .form-area form :-ms-input-placeholder {
       color: #d2cec8;
       font-style: italic;
       font-size: 14px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: 1px; }
     .form-area form ::-ms-input-placeholder {
       color: #d2cec8;
       font-style: italic;
       font-size: 14px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: 1px; }
     .form-area form ::placeholder {
       color: #d2cec8;
       font-style: italic;
       font-size: 14px;
-      font-weight: 400; }
+      font-weight: 400;
+      letter-spacing: 1px; }
     .form-area form button {
       color: #ffffff;
       background-color: #000000;
       font-family: 'suisse_intl';
       font-size: 20px;
       display: inline-block;
-      padding: 10px 20px 5px;
+      padding: 9px 20px 4px;
       border-radius: 7px;
       text-transform: uppercase;
       margin-left: 10px;
@@ -213,7 +217,8 @@ img {
       top: 3px;
       -webkit-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
-      transition: all 0.2s ease-in; }
+      transition: all 0.2s ease-in;
+      border: 1px solid transparent; }
       .form-area form button:hover {
         -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3); }
