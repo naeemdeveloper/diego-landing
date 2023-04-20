@@ -1,0 +1,192 @@
+/* landing page */
+.header-area {
+    background-color: #284321;
+    padding: 7px 0 5px;
+    text-align: center;
+    span {
+        color: $white-color;
+        text-transform: uppercase;
+        font-family: 'apercu-mono-regular';
+        font-size: 14px;
+        line-height: 0;
+    }
+}
+
+.hero-area {
+    padding: 60px 0;
+    background-image: url('../images/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    h2 {
+        color: $white-color;
+        font-weight: 400;
+    }
+
+    p {
+        color: $white-color;
+        font-size: 19px;
+        margin: 60px auto 0;
+        max-width: 650px;
+    }
+
+    #timer {
+        margin-top: 100px;
+        @include portrait-phone {
+            margin-top: 60px;
+        }
+        
+        div {
+            display: inline-block;
+            line-height: 1;
+            padding: 0 20px;
+        }
+          
+        span {
+            display: block;
+            font-size: 24px;
+            color: white;
+            font-family: 'apercu-mono-regular';
+            text-transform: uppercase;
+            @include portrait-phone {
+                font-size: 16px;
+            }
+        }
+        
+        #days,
+        #hours, 
+        #minutes {
+            font-family: 'apercu-mono-regular';
+            font-size: 150px;
+            color: $white-color;
+            @include desktop {
+                font-size: 120px;
+            }
+            @include all-phone {
+                font-size: 100px;
+            }
+            @include portrait-phone {
+                font-size: 50px;
+            }
+        }
+    }
+
+    a.primary-btn {
+        color: $black-color;
+        font-family: 'suisse_intl';
+        font-size: 20px;
+        display: inline-block;
+        padding: 15px 20px 10px;
+        background-color: $white-color;
+        border-radius: 7px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 100px;
+        transition: $transition;
+        &:hover {
+            box-shadow: 0 5px 15px 0 rgba(255,255,255,0.3);
+        }
+        @include portrait-phone {
+            margin-top: 60px;
+        }
+    }
+}
+
+.form-area {
+    padding: 60px 0;
+    background-color: #fcfcfb;
+
+    h5 {
+        font-family: 'suisse_intl';
+    }
+
+    form {
+        margin-top: 5px;
+
+        input {
+            width: 75%;
+            padding: 10px 20px;
+            border: 3px solid #d2cec8;
+            border-radius: 7px;
+            background-color: $white-color;
+            font-family: 'suisse_intl';
+            @include desktop {
+                width: 70%;
+            }
+            @include all-phone {
+                width: 70%;
+            }
+            @include portrait-phone {
+                width: 60%;
+            }
+        }
+
+        ::placeholder {
+            color: #d2cec8;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        button {
+            color: $white-color;
+            background-color: $black-color;
+            font-family: 'suisse_intl';
+            font-size: 20px;
+            display: inline-block;
+            padding: 10px 20px 5px;
+            border-radius: 7px;
+            text-transform: uppercase;
+            margin-left: 10px;
+            position: relative;
+            top: 3px;
+            transition: $transition;
+            &:hover {
+                box-shadow: 0 5px 15px 0 rgba(0,0,0,0.3);
+            }
+        }
+    }
+}
+
+.gallery-area {
+    padding-bottom: 30px;
+    .single-image {
+        margin-bottom: 30px;
+    }
+}
+
+.footer-area {
+    border-top: 3px dotted #d2cec8;
+
+    .footer-top {
+        padding: 40px 0;
+        
+        img {
+            max-width: 420px;
+            margin: auto;
+        }
+
+        p {
+            font-family: 'apercu-mono-regular';
+            font-size: 17px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+
+    .footer-bottom {
+        padding: 30px 0;
+        background-color: $black-color;
+
+        img {
+            width: auto;
+            margin: auto;
+            @include portrait-phone {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}

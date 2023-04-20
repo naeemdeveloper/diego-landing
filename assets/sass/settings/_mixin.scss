@@ -46,9 +46,3 @@
         @content;
     }
 }
-
-@mixin all-desktop() {
-    @media (min-width: 992px) {
-        @content;
-    }
-}
